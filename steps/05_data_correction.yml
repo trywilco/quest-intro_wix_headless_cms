@@ -1,0 +1,72 @@
+id: data_correction
+learningObjectives:
+  - Correct data in the CMS.
+hints:
+  - Access the user data section in the Wix CMS.
+  - Find James Hogan's profile and update his email address.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: "Alright, we've hit an unexpected twist. Sam has taken up a new adventure at Microsoft! Your mission is to dive into the CMS and change Sam Altman's email to `sam@microsoft.com`. It's crucial we keep our records as current as his career moves! After you've made this pivotal update, notify us. We'll conduct a thorough check to ensure our data reflects this exciting change in Sam's journey."
+trigger:
+  type: user_message
+  flowNode:
+    do:
+      - actionId: store_user_property
+        params:
+          name: client_id
+          value: ${userMessageText}
+
+      - actionId: network_http_request
+        name: create_token
+        params:
+          url: "https://www.wixapis.com/oauth2/token"
+          method: POST
+          data: 
+            clientId: ${user.properties.client_id}
+            grantType: anonymous
+    
+      - actionId: store_user_property
+        params:
+          name: client_token
+          value: ${outputs.create_token.data?.access_token}
+
+          
+      - actionId: network_http_request
+        name: query_items
+        params:
+          url: "https://www.wixapis.com/wix-data/v2/items/query"
+          method: POST
+          headers: 
+            Authorization: ${user.properties.client_token}
+          data: 
+            dataCollectionId: Our-Team
+            query: 
+              filter: 
+                name: "Sam Altman"
+    if:
+      conditions:
+        - conditionId: text_match_regex
+          params:
+            text: ${outputs.query_items.data?.dataItems?.email}
+            regex: ^sam@microsoft.com$
+            flags: i
+
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "Fantastic work! Sam's email is now updated, marking a successful end to our quest. Your quick adaptation and precision have been key to keeping our records spot-on. Thanks for riding through this journey with us!"
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "Seems we're not quite there yet. Please recheck Sam's email update in the CMS."
