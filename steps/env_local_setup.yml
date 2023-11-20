@@ -1,0 +1,22 @@
+id: env_local_setup
+learningObjectives:
+  - Configure the application ID in the local environment.
+hints:
+  - Edit the .env.local file in your project.
+  - Add the Wix app ID to this file and save the changes.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Next, integrate the app ID into our environment. Set the right app ID in
+              the .env.local file. Hit me up if you see the data coming through!
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

@@ -1,0 +1,23 @@
+id: intro_wix_headless_cms
+title: Intro to Wix Headless CMS
+subtitle: Kickstart Your Journey with Wix Headless CMS
+description: Embark on a journey to understand Wix Headless CMS. You'll create a
+  new app, configure OAuth, and interact with data, setting a solid foundation
+  for future projects.
+summary: You've successfully created and configured a Wix Headless CMS app,
+  learned OAuth setup, and managed real data. This quest laid the groundwork for
+  your expertise in Wix Headless CMS.
+skills:
+  - frontend
+  - backend
+  - api integration
+  - configuration
+steps:
+  - create_headless_app
+  - oauth_app_creation
+  - env_local_setup
+  - data_correction
+level: intermediate
+type: tutorial
+duration: 2
+repository: https://github.com/trywilco/Anythink-Market-Public

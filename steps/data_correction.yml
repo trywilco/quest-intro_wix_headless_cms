@@ -1,0 +1,30 @@
+id: data_correction
+learningObjectives:
+  - Correct data in the CMS.
+hints:
+  - Access the user data section in the Wix CMS.
+  - Find James Hogan's profile and update his email address.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Last step. We've got a small data hiccup to fix. Change James Hogan's
+              email to james@mysite.com in the CMS. This will ensure our data is
+              spot on.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: bot_message
+        params:
+          person: lucca
+          messages:
+            - text: And just like that, you're a Wix Headless CMS pro! You've set up a new
+                app, nailed the OAuth process, and even dabbled in data
+                management. Ness will be thrilled to see this in action!
+      - actionId: finish_step
