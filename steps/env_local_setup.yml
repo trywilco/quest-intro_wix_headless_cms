@@ -10,8 +10,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Next, integrate the app ID into our environment. Set the right app ID in
-              the .env.local file. Hit me up if you see the data coming through!
+          - text: "Alright, time to get our app talking to Wix! You've got a template environment file named `.env.template`. Copy it to create a `.env.local` file, then add the Wix app ID there. After that, open the app and check if you can see the data on the website. Let me know how it goes!"
     - actionId: ready_message
       params:
         person: lucca
@@ -19,4 +18,9 @@ trigger:
   type: user_ready_response
   flowNode:
     do:
+      - actionId: bot_message
+        params:
+          person: lucca
+          messages:
+          - text: "Awesome, you're making it look easy! Seeing the data means everything's connected perfectly."
       - actionId: finish_step
