@@ -20,4 +20,8 @@ steps:
 level: intermediate
 type: tutorial
 duration: 2
-repository: https://github.com/trywilco/Anythink-Market-Public
+repository: https://github.com/shem8/wix-cms-nextjs-template
+
+frameworks:
+  backend:
+    - next.js
