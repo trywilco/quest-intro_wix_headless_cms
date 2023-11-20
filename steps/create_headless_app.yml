@@ -3,7 +3,7 @@ learningObjectives:
   - Create a new Wix Headless app with CMS.
 hints:
   - Go to the Wix developer portal and start a new Headless CMS project.
-  - Follow the setup instructions to create the app.
+  - Follow the setup [instructions to create a project](https://dev.wix.com/docs/go-headless/getting-started/setup/general-setup/create-a-projec)
 startFlow:
   do:
     - actionId: bot_message
