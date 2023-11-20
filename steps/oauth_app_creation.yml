@@ -1,4 +1,4 @@
-id: wix
+id: oauth_app_creation
 learningObjectives:
   - Create an OAuth app and retrieve the client ID.
 hints:
