@@ -16,6 +16,7 @@ steps:
   - create_headless_app
   - oauth_app_creation
   - env_local_setup
+  - verify_email
   - data_correction
 level: intermediate
 type: tutorial
