@@ -3,7 +3,7 @@ learningObjectives:
   - Create an OAuth app and retrieve the client ID.
 hints:
   - In your Wix Headless CMS dashboard, navigate to the OAuth section.
-  - Create a new OAuth app and note the generated client ID.
+  - Create a [new OAuth app](https://dev.wix.com/docs/go-headless/getting-started/setup/authorization/create-an-o-auth-app-for-visitors-and-members) and note the generated client ID.
 startFlow:
   do:
     - actionId: bot_message
@@ -11,13 +11,55 @@ startFlow:
         person: lucca
         messages:
           - text: Great! Now, let's set up secure access. Create a new OAuth app in Wix, and
-              send the bot the client ID. This step is crucial for secure
-              communication.
-    - actionId: ready_message
-      params:
-        person: lucca
+              send me your client ID. This step is crucial for you to be able to pull some data into your website
 trigger:
-  type: user_ready_response
+  type: user_message
   flowNode:
     do:
-      - actionId: finish_step
+      - actionId: store_user_propery
+        params:
+          name: client_id
+          value: ${userMessageText}
+
+      - actionId: network_http_request
+        name: create_token
+        params:
+          url: "https://www.wixapis.com/oauth2/token"
+          method: "post"
+          data: {"clientId": ${user.properties.client_id}, "grantType": "anonymous"}
+    
+      - actionId: store_user_propery
+        params:
+          name: client_token
+          value: ${outputs.create_token.data?.access_token}
+
+          
+      - actionId: network_http_request
+        name: query_items
+        params:
+          url: "https://www.wixapis.com/wix-data/v2/items/query"
+          method: "post"
+          headers: {"Authorization": ${user.properties.client_token}}
+          data: {"dataCollectionId": "Our-Team"}
+    if:
+      conditions:
+        - conditionId: is_truthy
+          params:
+            value: ${outputs.query_items.data?.pagingMetadata?.count > 0}
+
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "Great!"
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "That's not correct, try again!"
+              delay: 500
