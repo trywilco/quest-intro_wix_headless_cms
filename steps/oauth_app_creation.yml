@@ -1,4 +1,4 @@
-id: oauth_app_creation
+id: wix
 learningObjectives:
   - Create an OAuth app and retrieve the client ID.
 hints:
@@ -16,7 +16,7 @@ trigger:
   type: user_message
   flowNode:
     do:
-      - actionId: store_user_propery
+      - actionId: store_user_property
         params:
           name: client_id
           value: ${userMessageText}
@@ -25,10 +25,12 @@ trigger:
         name: create_token
         params:
           url: "https://www.wixapis.com/oauth2/token"
-          method: "post"
-          data: {"clientId": ${user.properties.client_id}, "grantType": "anonymous"}
+          method: POST
+          data: 
+            clientId: ${user.properties.client_id}
+            grantType: anonymous
     
-      - actionId: store_user_propery
+      - actionId: store_user_property
         params:
           name: client_token
           value: ${outputs.create_token.data?.access_token}
@@ -38,9 +40,11 @@ trigger:
         name: query_items
         params:
           url: "https://www.wixapis.com/wix-data/v2/items/query"
-          method: "post"
-          headers: {"Authorization": ${user.properties.client_token}}
-          data: {"dataCollectionId": "Our-Team"}
+          method: POST
+          headers: 
+            Authorization: ${user.properties.client_token}
+          data: 
+            dataCollectionId: Our-Team
     if:
       conditions:
         - conditionId: is_truthy
@@ -53,7 +57,7 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "Great!"
+            - text: "Great job with the OAuth setup! The client ID is key for secure interactions. Ready for the next challenge?;p"
         - actionId: finish_step
       else:
         do:
@@ -61,5 +65,4 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "That's not correct, try again!"
-              delay: 500
+            - text: "It can be tricky, I know. Double-check the OAuth section in the Wix dashboard."
