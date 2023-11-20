@@ -1,0 +1,41 @@
+id: verify_email
+learningObjectives:
+  - Verify displayed data in the app.
+hints:
+  - Navigate to the team's page within the app.
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: "Now, let's ensure our data is displaying correctly. Open the app, head to the team's page, and find Sam Altman's profile. Your task is to send back the email address listed for Sam Altman."
+
+trigger:
+  type: user_message
+  params:
+    person: lucca
+  flowNode:
+    if:
+      conditions:
+      - conditionId: text_contains_strings
+        params:
+          text: "${userMessageText}"
+          strings:
+          - "sam@openai.com"
+
+      then:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "Right! Wait... Oh boy..."
+        - actionId: finish_step
+      else:
+        do:
+        - actionId: bot_message
+          params:
+            person: lucca
+            messages:
+            - text: "Not quite right. Please recheck"
