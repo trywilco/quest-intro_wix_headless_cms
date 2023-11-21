@@ -57,7 +57,7 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "Great job with the OAuth setup! The client ID is key for secure interactions. Ready for the next challenge?"
+            - text: "Great job with the OAuth setup, I already see that you have some data in the "Our Team" collection. The client ID is key for secure interactions. Ready for the next challenge?"
         - actionId: finish_step
       else:
         do:
