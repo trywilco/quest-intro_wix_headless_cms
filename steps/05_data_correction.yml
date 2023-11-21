@@ -46,7 +46,7 @@ trigger:
       conditions:
         - conditionId: text_match_regex
           params:
-            text: ${outputs.query_items.data?.dataItems?.email}
+            text: ${outputs.query_items.data?.dataItems[0]?.email}
             regex: ^sam@microsoft.com$
             flags: i
 
