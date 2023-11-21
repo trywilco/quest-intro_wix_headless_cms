@@ -15,11 +15,6 @@ trigger:
   type: user_message
   flowNode:
     do:
-      - actionId: store_user_property
-        params:
-          name: client_id
-          value: ${userMessageText}
-
       - actionId: network_http_request
         name: create_token
         params:
