@@ -2,7 +2,8 @@ id: oauth_app_creation
 learningObjectives:
   - Create an OAuth app and retrieve the client ID.
 hints:
-  - In your Wix Headless CMS dashboard, navigate to the OAuth section.
+  - In your Wix Headless CMS dashboard, navigate to the Settings > Headless Settings
+.
 startFlow:
   do:
     - actionId: bot_message
@@ -56,7 +57,7 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "Great job with the OAuth setup! The client ID is key for secure interactions. Ready for the next challenge?;p"
+            - text: "Great job with the OAuth setup! The client ID is key for secure interactions. Ready for the next challenge?"
         - actionId: finish_step
       else:
         do:
