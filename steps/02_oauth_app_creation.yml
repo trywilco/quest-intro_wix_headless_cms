@@ -3,7 +3,7 @@ learningObjectives:
   - Create an OAuth app and retrieve the client ID.
 hints:
   - In your Wix Headless CMS dashboard, navigate to the Settings > Headless Settings
-.
+
 startFlow:
   do:
     - actionId: bot_message
