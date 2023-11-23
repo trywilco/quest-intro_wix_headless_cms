@@ -9,9 +9,8 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Let's start at square one. [Create a new Headless Wix app with CMS](https://dev.wix.com/docs/go-headless/getting-started/setup/general-setup/create-a-projec). This is
-              where our journey begins. Let me know when you're ready for the
-              next step.
+          - text: Let's start at square one. [Create a new Headless Wix app with CMS](https://manage.wix.com/create-site?ref=site-dropdown). This is
+              where our journey begins. Choose Wix headless website and continue choosing CMS as a built-in feature. Let me know when you're ready for the next step.
     - actionId: ready_message
       params:
         person: lucca
