@@ -3,7 +3,7 @@ learningObjectives:
   - Correct data in the CMS.
 hints:
   - Access the user data section in the Wix CMS.
-  - Find James Hogan's profile and update his email address.
+  - Find Sam Altman's profile and update his email address.
 startFlow:
   do:
     - actionId: bot_message
