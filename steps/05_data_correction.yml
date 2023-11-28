@@ -59,7 +59,7 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "Fantastic work! Sam's email is now updated, marking a successful end to our quest. Your quick adaptation and precision have been key to keeping our records spot-on. Thanks for riding through this journey with us!"
+            - text: "![](https://i.giphy.com/media/2CiAsp6yAdiPKx1aM0/giphy.gif)<br/>Fantastic work! Sam's email is now updated, marking a successful end to our quest. Your quick adaptation and precision have been key to keeping our records spot-on.<br/> Thanks for riding through this journey with us!"
         - actionId: finish_step
       else:
         do:
