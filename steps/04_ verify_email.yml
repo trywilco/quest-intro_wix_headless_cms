@@ -9,7 +9,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: "Now, let's ensure our data is displaying correctly. Open the app, head to the team's page, and find Sam Altman's profile. Your task is to send back the email address listed for Sam Altman."
+          - text: "Now, let's ensure our data is displaying correctly.<br/>Open the app, head to the team's page, and find Sam Altman's profile. Your task is to :instruction[send back the email address listed for Sam Altman.] "
 
 trigger:
   type: user_message
