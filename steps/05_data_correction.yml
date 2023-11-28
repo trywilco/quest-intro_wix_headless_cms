@@ -10,7 +10,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: "Alright, we've hit an unexpected twist. Sam has taken up a new adventure at Microsoft! Your mission is to dive into the CMS and change Sam Altman's email to `sam@microsoft.com`. It's crucial we keep our records as current as his career moves! After you've made this pivotal update, notify us. We'll conduct a thorough check to ensure our data reflects this exciting change in Sam's journey."
+          - text: "Alright, we've hit an unexpected twist. Sam has taken up a new adventure at Microsoft! :instruction[Your mission is to dive into the CMS and change Sam Altman's email to `sam@microsoft.com`.] It's crucial we keep our records as current as his career moves!<br/> After you've made this pivotal update, notify us. We'll conduct a thorough check to ensure our data reflects this exciting change in Sam's journey."
     - actionId: ready_message
       params:
         person: lucca
