@@ -21,7 +21,7 @@ trigger:
     do:
       - actionId: wix_load_data
         params:
-          dataPath: "assets/data.json"
+          resourcePath: "assets/data.json"
       - actionId: bot_message
         params:
           person: lucca
