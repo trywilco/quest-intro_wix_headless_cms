@@ -1,0 +1,293 @@
+{
+   "News":{
+      "displayName":"News",
+      "fields":[
+         {
+            "key":"image",
+            "displayName":"Image",
+            "type":"IMAGE"
+         },
+         {
+            "key":"_id",
+            "displayName":"ID",
+            "type":"TEXT"
+         },
+         {
+            "key":"short_description",
+            "displayName":"Short Description",
+            "type":"TEXT"
+         },
+         {
+            "key":"long_description",
+            "displayName":"Long Description",
+            "type":"TEXT"
+         },
+         {
+            "key":"slug",
+            "displayName":"Slug",
+            "type":"TEXT"
+         },
+         {
+            "key":"date",
+            "displayName":"date",
+            "type":"DATETIME"
+         },
+         {
+            "key":"title",
+            "displayName":"Title",
+            "type":"TEXT"
+         }
+      ],
+      "permissions":{
+         "insert":"ADMIN",
+         "update":"ADMIN",
+         "remove":"ADMIN",
+         "read":"ANYONE"
+      },
+      "data":[
+         {
+            "title":"Recent Classrooms Renovations",
+            "short_description":"This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.",
+            "long_description":"This item is connected to a text field in your content collection. Double click what you want to edit and then select \"Change Content\" to open the collection. Want to view and manage all your collections? Click the Content Manager icon on the add panel to your left. In the Content Manager, you can update items, add new fields, create dynamic pages and more. Your content collection is already set up with fields and content. Add your own by editing each field, or import CSV files to your content collection. You can create fields for rich content, images, videos and more.",
+            "image":"https://static.wixstatic.com/media/84770f_cc96ed8fbbcb4027aba8dc721e16e05e~mv2_d_3617_5425_s_4_2.jpg",
+            "date":{"$date": "2023-08-01T00:00:00Z"},
+            "slug":"recent-classrooms-renovations"
+         },
+         {
+            "title":"The Role of Sports in the Education System",
+            "short_description":"This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.",
+            "long_description":"This item is connected to a text field in your content collection. Double click what you want to edit and then select \"Change Content\" to open the collection. Want to view and manage all your collections? Click the Content Manager icon on the add panel to your left. In the Content Manager, you can update items, add new fields, create dynamic pages and more. Your content collection is already set up with fields and content. Add your own by editing each field, or import CSV files to your content collection. You can create fields for rich content, images, videos and more.",
+            "image":"https://static.wixstatic.com/media/84770f_4ae8f1ff8ff9489daf727ab6b88d0414~mv2_d_4240_2832_s_4_2.jpg",
+            "date":{"$date": "2023-04-01T00:00:00Z"},
+            "slug":"the-role-of-sports-in-the-education-system"
+         },
+         {
+            "title":"10 Reasons Why School Uniform Matter",
+            "short_description":"This item is connected to a text field in your content collection. Double click to add your own content. Click the Content Manager icon on the add panel to your left.",
+            "long_description":"This item is connected to a text field in your content collection. Double click what you want to edit and then select \"Change Content\" to open the collection. Want to view and manage all your collections? Click the Content Manager icon on the add panel to your left. In the Content Manager, you can update items, add new fields, create dynamic pages and more. Your content collection is already set up with fields and content. Add your own by editing each field, or import CSV files to your content collection. You can create fields for rich content, images, videos and more.",
+            "image":"https://static.wixstatic.com/media/84770f_6b46ae803eca48f498cf43536e30e64f~mv2_d_5616_3744_s_4_2.jpg/v1/fill/w_442,h_334,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Image-place-holder.jpg 1x, https://static.wixstatic.com/media/84770f_6b46ae803eca48f498cf43536e30e64f~mv2_d_5616_3744_s_4_2.jpg",
+            "date":{"$date": "2023-06-01T00:00:00Z"},
+            "slug":"10-reasons-why-school-uniform-matter"
+         }
+      ]
+   },
+   "Our-Projects":{
+            "displayName":"Our Projects",
+            "fields":[
+               {
+                  "key":"title",
+                  "displayName":"Title",
+                  "type":"TEXT"
+               },
+               {
+                  "key":"slug",
+                  "displayName":"slug",
+                  "type":"TEXT"
+               },
+               {
+                  "key":"short_description",
+                  "displayName":"Short Description",
+                  "type":"TEXT"
+               },
+               {
+                  "key":"gallery",
+                  "displayName":"Gallery",
+                  "type":"MEDIA_GALLERY"
+               },
+               {
+                  "key":"cover",
+                  "displayName":"Cover",
+                  "type":"IMAGE"
+               },
+               {
+                  "key":"long_description",
+                  "displayName":"Long Description",
+                  "type":"TEXT"
+               }
+            ],
+            "permissions":{
+               "insert":"ADMIN",
+               "update":"ADMIN",
+               "remove":"ADMIN",
+               "read":"ANYONE"
+      },
+      "data":[
+         {
+            "title":"Literacy Development",
+            "slug":"literacy-development",
+            "short_description":"This item is connected to a text field in your content collection...",
+            "gallery":[{"description":"","slug":"8dfd06_abbf2bf6054f4e2f8845594a9667f280~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_abbf2bf6054f4e2f8845594a9667f280~mv2.jpg/Example-13.jpg#originWidth=8192&originHeight=5462","title":"Example-13.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":5462,"width":8192}},{"description":"","slug":"8dfd06_ee58522fad8c406b9ee646055cb3f235~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_ee58522fad8c406b9ee646055cb3f235~mv2.jpg/Example-14.jpg#originWidth=2560&originHeight=1440","title":"Example-14.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":1440,"width":2560}},{"description":"","slug":"8dfd06_ad3565419f6e4535883958a1dc6f15da~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_ad3565419f6e4535883958a1dc6f15da~mv2.jpg/Example-15.jpg#originWidth=4896&originHeight=3264","title":"Example-15.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3264,"width":4896}}],
+            "cover":"https://static.wixstatic.com/media/84770f_6e4797d2cf2b488fadc208485986bfdd~mv2_d_4395_2933_s_4_2.jpg",
+            "long_description":"This item is connected to a text field in your content collection..."
+         },
+         {
+            "title":"Transportation for Youth",
+            "slug":"transportation-for-youth",
+            "short_description":"This item is connected to a text field in your content collection...",
+            "gallery":[{"description":"","slug":"8dfd06_a79b97e9e5c0426d8dd1bf4cb3478561~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_a79b97e9e5c0426d8dd1bf4cb3478561~mv2.jpg/Example-7.jpg#originWidth=3000&originHeight=2000","title":"Example-7.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":2000,"width":3000}},{"description":"","slug":"8dfd06_60dd2707774b48c2a6c918c0f3763d96~mv2.jpeg","alt":"","src":"wix:image://v1/8dfd06_60dd2707774b48c2a6c918c0f3763d96~mv2.jpeg/Example-8.jpeg#originWidth=5760&originHeight=3840","title":"Example-8.jpeg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3840,"width":5760}},{"description":"","slug":"8dfd06_9e8738606adb42b0b44f2363417018d3~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_9e8738606adb42b0b44f2363417018d3~mv2.jpg/Example-9.jpg#originWidth=3577&originHeight=2355","title":"Example-9.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":2355,"width":3577}}],
+            "cover":"https://static.wixstatic.com/media/84770f_02295d8cd2e24277aa38c26a150c3aaa~mv2_d_5760_3840_s_4_2.jpeg",
+            "long_description":"This item is connected to a text field in your content collection..."
+         },
+         {
+            "title":"Adopt a Student",
+            "slug":"adopt-a-student",
+            "short_description":"This item is connected to a text field in your content collection...",
+            "gallery":[{"description":"","slug":"8dfd06_338ae27a73c048129775cf352c9b668f~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_338ae27a73c048129775cf352c9b668f~mv2.jpg/Example-4.jpg#originWidth=4992&originHeight=3328","title":"Example-4.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3328,"width":4992}},{"description":"","slug":"8dfd06_e4a5187e392441688c864d2e0044ffac~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_e4a5187e392441688c864d2e0044ffac~mv2.jpg/Example-5.jpg#originWidth=8660&originHeight=5773","title":"Example-5.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":5773,"width":8660}},{"description":"","slug":"8dfd06_b39672a88dc147efa829a9b6c878e700~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_b39672a88dc147efa829a9b6c878e700~mv2.jpg/Example-6.jpg#originWidth=3491&originHeight=2327","title":"Example-6.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":2327,"width":3491}}],
+            "cover":"https://static.wixstatic.com/media/0b340f_12ead601f2dc4867a7bf09ce72ebad64~mv2_d_5184_3456_s_4_2.jpg",
+            "long_description":"This item is connected to a text field in your content collection..."
+         },
+         {
+            "title":"Annual Tech Challenge",
+            "slug":"annual-tech-challenge",
+            "short_description":"This item is connected to a text field in your content collection...",
+            "gallery":[{"description":"","slug":"8dfd06_828dca4abd564d87ba6760620ec8f238~mv2.jpeg","alt":"","src":"wix:image://v1/8dfd06_828dca4abd564d87ba6760620ec8f238~mv2.jpeg/Example-1.jpeg#originWidth=6144&originHeight=4080","title":"Example-1.jpeg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":4080,"width":6144}},{"description":"","slug":"8dfd06_655d88d6133542189788919add79b65f~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_655d88d6133542189788919add79b65f~mv2.jpg/Example-2.jpg#originWidth=5500&originHeight=3668","title":"Example-2.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3668,"width":5500}},{"description":"","slug":"8dfd06_1559dff52cf0452e9a8ce012e4077c9d~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_1559dff52cf0452e9a8ce012e4077c9d~mv2.jpg/Example-3.jpg#originWidth=7360&originHeight=4912","title":"Example-3.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":4912,"width":7360}}],
+            "cover":"https://static.wixstatic.com/media/84770f_878098e5beb14c1aadfe0539d9ac7f82~mv2_d_5760_3840_s_4_2.jpg",
+            "long_description":"This item is connected to a text field in your content collection..."
+         },
+         {
+            "title":"English for All",
+            "slug":"english-for-all",
+            "short_description":"This item is connected to a text field in your content collection...",
+            "gallery":
+               [{"description":"","slug":"8dfd06_73927c539cb24037971d7d591f7d05c1~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_73927c539cb24037971d7d591f7d05c1~mv2.jpg/Example-10.jpg#originWidth=4592&originHeight=2584","title":"Example-10.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":2584,"width":4592}},{"description":"","slug":"8dfd06_3bd6e7e9fc59495e8fe33f7d1a69a30f~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_3bd6e7e9fc59495e8fe33f7d1a69a30f~mv2.jpg/Example-11.jpg#originWidth=5184&originHeight=3456","title":"Example-11.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3456,"width":5184}},{"description":"","slug":"8dfd06_6e49d89838f44dc5a019679d93145322~mv2.jpg","alt":"","src":"wix:image://v1/8dfd06_6e49d89838f44dc5a019679d93145322~mv2.jpg/Example-12.jpg#originWidth=4356&originHeight=3083","title":"Example-12.jpg","type":"image","settings":{"focalPoint":[0.5,0.5],"height":3083,"width":4356}}]
+            ,
+            "cover":"https://static.wixstatic.com/media/84770f_8728d6e0d6404b9d97f1ccdbd30ffe3c~mv2_d_5760_3840_s_4_2.jpg",
+            "long_description":"This item is connected to a text field in your content collection..."
+         }
+      ]
+   },
+   "Volunteers": {
+         "displayName": "Volunteers",
+         "fields": [
+            {
+               "key": "name",
+               "displayName": "Name",
+               "type": "TEXT"
+            },
+            {
+               "key": "email",
+               "displayName": "Email",
+               "type": "TEXT"
+            },
+            {
+               "key": "about",
+               "displayName": "About",
+               "type": "TEXT"
+            }
+         ],
+         "permissions": {
+            "insert": "ADMIN",
+            "update": "ADMIN",
+            "remove": "ADMIN",
+            "read": "ANYONE"
+      },
+      "data": [
+         {
+            "name": "Harvey Holmes",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Derek Castillo",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Martin Scott",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Tracy Spencer",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Darrell Kennedy",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Alice Boldwin",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Sonya Harper",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         },
+         {
+            "name": "Kelvin Boone",
+            "email": "info@mysite.com",
+            "about": "This item is connected to a text field in your content collection. Double click to add your own content"
+         }
+      ]
+   },
+   "Our-Team": {
+         "displayName": "Our Team",
+         "fields": [
+            {
+               "key": "name",
+               "displayName": "Name",
+               "type": "TEXT"
+            },
+            {
+               "key": "email",
+               "displayName": "Email",
+               "type": "TEXT"
+            },
+            {
+               "key": "about",
+               "displayName": "About",
+               "type": "TEXT"
+            },
+            {
+               "key": "image",
+               "displayName": "Image",
+               "type": "IMAGE"
+            },
+            {
+               "key": "alt",
+               "displayName": "Alt",
+               "type": "TEXT"
+            }
+         ],
+         "permissions": {
+            "insert": "ADMIN",
+            "update": "ADMIN",
+            "remove": "ADMIN",
+            "read": "ANYONE"
+      },
+      "data": [
+         {
+            "name": "Ilya Sutskever",
+            "email": "ilya@openai.com",
+            "about": "Ilya Sutskever FRS is a Russian-born Israeli-Canadian computer scientist working in machine learning, who co-founded and serves as board member and Chief Scientist of OpenAI. He has made several major contributions to the field of deep learning.",
+            "image": "https://hnbgu.net/wp-content/uploads/2023/11/Ilya-Sutskever-min.jpg",
+            "alt": ""
+         },
+         {
+            "name": "Greg Brockman",
+            "email": "greg@openai.com",
+            "about": "Greg Brockman is an American entrepreneur, investor and software developer who is a co-founder and, until November 2023, was the president of OpenAI. He began his career at Stripe in 2010, upon leaving MIT, and became their CTO in 2013. He left Stripe in 2015 to co-found OpenAI, where he also assumed the role of CTO.",
+            "image": "https://pbs.twimg.com/profile_images/1347621377503711233/bHg3ipfD_400x400.jpg",
+            "alt": ""
+         },
+         {
+            "name": "Mira Murati",
+            "email": "mira@openai.com",
+            "about": "Mira Murati is an Albanian engineer and business manager. She has been serving as chief technology officer of OpenAI since 2018 and as interim chief executive officer of OpenAI since November 17, 2023.",
+            "image": "https://pbs.twimg.com/profile_images/1483374027905413122/C2kbpEeD_400x400.jpg",
+            "alt": ""
+         },
+         {
+            "name": "Sam Altman",
+            "email": "sam@openai.com",
+            "about": "Samuel Harris Altman is an American entrepreneur and investor. He previously served as chief executive officer of OpenAI from 2019 to 2023 and as president of Y Combinator from 2014 to 2019. He now serves as a lead of an advanced AI research team at Microsoft.",
+            "image": "https://static01.nyt.com/images/2023/03/15/multimedia/17ALTMAN-Top/17ALTMAN-Top-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
+            "alt": ""
+         }
+      ]
+   }
+}
