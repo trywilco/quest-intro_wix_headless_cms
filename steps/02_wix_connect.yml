@@ -1,0 +1,30 @@
+id: wix_connect
+learningObjectives:
+  - Connect your Wix account and create your first  Wix Headless Project
+hints:
+  - Click on Wix connect and select your newly or existing Wix Headless Project
+
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Great! Now, let's set up secure Wix access. <br/>In order to start working we need you to connect to your Wix Project with the Wilco App.
+          - components:
+            - type: wix_connect
+trigger:
+  type: user_event
+  params:
+    event: wix_user_connected
+  flowNode:
+    do:
+      - actionId: wix_load_data
+        params:
+          resourcePath: "assets/data.json"
+      - actionId: bot_message
+        params:
+          person: lucca
+          messages:
+          - text: "![](https://i.giphy.com/media/Jir7AUookJHIVb5aYM/giphy.gif) </br> Great job with the setup, I already see that you have some data in the 'Our Team' collection. </br>Ready for the next challenge?"
+      - actionId: finish_step
