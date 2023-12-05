@@ -26,5 +26,5 @@ trigger:
         params:
           person: lucca
           messages:
-          - text: "![](https://i.giphy.com/media/Jir7AUookJHIVb5aYM/giphy.gif) </br> Great job with the setup, I already see that you have some data in the 'Our Team' collection. </br>Ready for the next challenge?"
+          - text: "![](https://i.giphy.com/media/Jir7AUookJHIVb5aYM/giphy.gif)Great job with the setup, I already see that you have some data in the 'Our Team' collection. </br>Ready for the next challenge?"
       - actionId: finish_step

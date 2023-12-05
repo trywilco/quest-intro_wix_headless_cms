@@ -9,7 +9,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text: Great! Now, let's set up secure access. We need to create a [new OAuth app](https://dev.wix.com/docs/go-headless/getting-started/setup/authorization/create-an-o-auth-app-for-visitors-and-members) in your newly created Wix headless website by clicking Headless settings at the bottom, :instruction[and
+          - text:On we go! Now, let's set up secure access. We need to create a [new OAuth app](https://dev.wix.com/docs/go-headless/getting-started/setup/authorization/create-an-o-auth-app-for-visitors-and-members) in your newly created Wix headless website by clicking Headless settings at the bottom, :instruction[and
               send me your client ID]. This step is crucial for you to be able to pull some data into your website. <br/> ![](https://res.cloudinary.com/wilco/image/upload/v1700738096/Screenshot_2023-11-23_at_13.10.38_brrgco.png)
 trigger:
   type: user_message
@@ -56,7 +56,7 @@ trigger:
           params:
             person: lucca
             messages:
-            - text: "![](https://i.giphy.com/media/Jir7AUookJHIVb5aYM/giphy.gif) </br> Great job with the OAuth setup, I already see that you have some data in the 'Our Team' collection. The client ID is key for secure interactions. Ready for the next challenge?"
+            - text: "![](https://i.giphy.com/media/26u4hHj87jMePiO3u/giphy.gif)Nice one with the OAuth setup! I already see that you have some data in the 'Our Team' collection. The client ID is key for secure interactions. Ready for the next challenge?"
         - actionId: finish_step
       else:
         do:
