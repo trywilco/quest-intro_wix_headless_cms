@@ -9,7 +9,7 @@ startFlow:
       params:
         person: lucca
         messages:
-          - text:On we go! Now, let's set up secure access. We need to create a [new OAuth app](https://dev.wix.com/docs/go-headless/getting-started/setup/authorization/create-an-o-auth-app-for-visitors-and-members) in your newly created Wix headless website by clicking Headless settings at the bottom, :instruction[and
+          - text: On we go! Now, let's set up secure access. We need to create a [new OAuth app](https://dev.wix.com/docs/go-headless/getting-started/setup/authorization/create-an-o-auth-app-for-visitors-and-members) in your newly created Wix headless website by clicking Headless settings at the bottom, :instruction[and
               send me your client ID]. This step is crucial for you to be able to pull some data into your website. <br/> ![](https://res.cloudinary.com/wilco/image/upload/v1700738096/Screenshot_2023-11-23_at_13.10.38_brrgco.png)
 trigger:
   type: user_message
