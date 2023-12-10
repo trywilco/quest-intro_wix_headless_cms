@@ -51,3 +51,6 @@ trigger:
             person: lucca
             messages:
             - text: "Seems we're not quite there yet. Please recheck Sam's email update in the CMS."
+        - actionId: ready_message
+          params:
+            person: lucca
