@@ -20,7 +20,6 @@ steps:
   - verify_email
   - data_correction
 level: intermediate
-type: tutorial
 duration: 2
 repository: https://github.com/shem8/wix-cms-nextjs-template
 
