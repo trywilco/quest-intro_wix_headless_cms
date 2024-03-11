@@ -2,7 +2,7 @@ id: wix_connect
 learningObjectives:
   - Connect your Wix account and create your first  Wix Headless Project
 hints:
-  - Click on Wix connect and select your newly or existing Wix Headless Project
+  - Click on Wix connect and select your new or existing Wix Headless Project
 
 startFlow:
   do:
